@@ -1,0 +1,37 @@
+#hakkimizda {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  #hakkimizda .containerr {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  #hakkimizda h2 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  #hakkimizda p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  #hakkimizda .team {
+    margin-top: 30px;
+  }
+  
+  #hakkimizda .team img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  #hakkimizda .team p {
+    font-size: 1.1em;
+    color: #444;
+  }
+  

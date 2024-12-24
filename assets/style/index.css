@@ -1,0 +1,301 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Başlık ve Logo */
+header {
+    background-color: #000000;
+    color: #db3434;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1.logo {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #db3434;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    color: #000000;
+    background-color: #db3434;
+    border-radius: 10px;
+}
+
+/* Ana Sayfa (Home) */
+#home {
+    background-color: #db3434;
+    color: #000000;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#home .btn {
+    background-color: #000000;
+    color: #db3434;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#home .btn:hover {
+    background-color: #ff7f7f;
+    color: #000000;
+}
+
+/* Hakkımda (About) */
+#about {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.about-text ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/* Projelerim (Projects) */
+#projects {
+    background-color: #db3434;
+    padding: 60px 20px;
+}
+
+#projects .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-size: 1.6em;
+    padding: 15px;
+    background-color: #555;
+    color: #fff;
+}
+
+.project-card p {
+    padding: 15px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* İletişim (Contact) */
+#contact {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+#contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #db3434;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #000000;
+    color: #db3434;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #db3434;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+footer a {
+    color: #555;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #home h2 {
+        font-size: 2.5em;
+    }
+
+    #home p {
+        font-size: 1.2em;
+    }
+
+    form input, form textarea {
+        font-size: 1em;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}
